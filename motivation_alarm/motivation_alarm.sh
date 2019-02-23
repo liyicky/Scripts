@@ -2,7 +2,7 @@
 
 osascript -e "set volume 10"
 
-ls books/**.m** | sort -R | tail -1 | while read file; do
+ls ~/Catode/Scripts/motivation_alarm/books/**.m** | sort -R | tail -1 | while read file; do
     terminal-notifier -title "Motivation Alarm" -message "Playing $file";
-    open $file;
+    mpg123 -v $file;
 done

@@ -20,6 +20,7 @@ function convert_all_to_mp4() {
   convert .mkv
   convert .srt
   convert .flac
+  convert .m4v
 }
 
 function convert() {
